@@ -20,8 +20,6 @@
 		319646CC18A4CFA000488129 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319646CB18A4CFA000488129 /* XCTest.framework */; };
 		319646CD18A4CFA000488129 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319646B218A4CFA000488129 /* Foundation.framework */; };
 		319646CE18A4CFA000488129 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319646B618A4CFA000488129 /* UIKit.framework */; };
-		319646D618A4CFA000488129 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 319646D418A4CFA000488129 /* InfoPlist.strings */; };
-		319646D818A4CFA000488129 /* RBNetworkImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 319646D718A4CFA000488129 /* RBNetworkImageTests.m */; };
 		319646E218A4CFE000488129 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 319646E118A4CFE000488129 /* Podfile */; };
 		31E8068718A4D272004CA8F8 /* RBNetworkImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E8068618A4D272004CA8F8 /* RBNetworkImageView.m */; };
 		6C4E32CB22C54274BCCB0E75 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EB178BE8C294970BF9C26F2 /* libPods.a */; };
@@ -58,9 +56,6 @@
 		319646B618A4CFA000488129 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		319646CA18A4CFA000488129 /* RBNetworkImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RBNetworkImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		319646CB18A4CFA000488129 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		319646D318A4CFA000488129 /* RBNetworkImageTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RBNetworkImageTests-Info.plist"; sourceTree = "<group>"; };
-		319646D518A4CFA000488129 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		319646D718A4CFA000488129 /* RBNetworkImageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBNetworkImageTests.m; sourceTree = "<group>"; };
 		319646E118A4CFE000488129 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		31E8068518A4D272004CA8F8 /* RBNetworkImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBNetworkImageView.h; sourceTree = "<group>"; };
 		31E8068618A4D272004CA8F8 /* RBNetworkImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBNetworkImageView.m; sourceTree = "<group>"; };
@@ -117,7 +112,6 @@
 			children = (
 				319646E118A4CFE000488129 /* Podfile */,
 				319646B818A4CFA000488129 /* RBNetworkImage */,
-				319646D118A4CFA000488129 /* RBNetworkImageTests */,
 				319646B118A4CFA000488129 /* Frameworks */,
 				319646B018A4CFA000488129 /* Products */,
 				379F5BC6003B4671A6F112AB /* Pods.xcconfig */,
@@ -152,24 +146,6 @@
 				319646E418A4D18C00488129 /* RBNetworkImage */,
 			);
 			path = RBNetworkImage;
-			sourceTree = "<group>";
-		};
-		319646D118A4CFA000488129 /* RBNetworkImageTests */ = {
-			isa = PBXGroup;
-			children = (
-				319646D718A4CFA000488129 /* RBNetworkImageTests.m */,
-				319646D218A4CFA000488129 /* Supporting Files */,
-			);
-			path = RBNetworkImageTests;
-			sourceTree = "<group>";
-		};
-		319646D218A4CFA000488129 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				319646D318A4CFA000488129 /* RBNetworkImageTests-Info.plist */,
-				319646D418A4CFA000488129 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		319646E418A4D18C00488129 /* RBNetworkImage */ = {
@@ -285,7 +261,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				319646D618A4CFA000488129 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,7 +317,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				319646D818A4CFA000488129 /* RBNetworkImageTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,14 +335,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				3108D6FE18A591050078F86B /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		319646D418A4CFA000488129 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				319646D518A4CFA000488129 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
